@@ -1,0 +1,19 @@
+#Egoist config
+SOCKSPort 127.0.0.1:9050
+RunAsDaemon 1
+
+#Log notice file /var/log/tor/notices.log
+#ServerTransportPlugin obfs4 exec /usr/bin/obfs4proxy
+
+HiddenServiceStatistics 0
+ExtraInfoStatistics 0
+ExitPolicy reject *:*
+BridgeRelay 0
+StrictNodes 1
+ExcludeNodes {??}
+WarnUnsafeSocks 0
+#DNS
+AutomapHostsOnResolve 1
+AutomapHostsSuffixes .exit,.onion
+DNSListenAddress 127.0.0.1
+DNSPort 9053
